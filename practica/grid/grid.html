@@ -7,14 +7,54 @@
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/rhm.css">
     <title>Grid Bootstrap 4</title>
+    <!-- definimos archivos css -->
+    <style>
+       .row > div {
+           background: green;
+           margin: 10px 0;
+       }
+    </style>
+
+
 </head>
+<!-- h1{} comando emmet inserta contenido dentro del h1 -->
+<!-- siempre dentro un container -> row -> col* dentro de las mismas o sea las columnas 
+    va todo el contenido es la forma de trabajar en bootstrap 4 -->
+<!-- tamaños dentro de las columnas -->
+<!-- .col extra pequeño(extra smaall) - Smarphones vertical Menos de 544px-->
+<!-- .col-sm pequeño(smaall) - Smarphones vertical Mas de 544px y Menos de 768px-->
+<!-- .col-md mediano(Medium) - Tablets Mas de 768px y Menos de 992px-->
+<!-- .col-lg large(Large) - Computadoras Mas de 992px y Menos de 1200px-->
+<!-- .col-xl extra large(extra large) - Computadoras Mas de 1200px-->
 <body>
     <div class="container">
-       <header class="row">
-           <div class="col">
-               <h1>Header</h1>
-           </div>
-       </header>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                    <h1>Hola Mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Accusamus odio voluptatum, perspiciatis magni quibusdam neque,
+                       alias illum ipsam voluptatibus mollitia aut eos molestiae.
+                       Voluptate et voluptatibus voluptates quam? Blanditiis, rerum.
+                    </p>
+            </div>
+            <div class="col-12 col-sm-3 col-md-4">
+                    <h1>Hola Mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Accusamus odio voluptatum, perspiciatis magni quibusdam neque,
+                       alias illum ipsam voluptatibus mollitia aut eos molestiae.
+                       Voluptate et voluptatibus voluptates quam? Blanditiis, rerum.
+                    </p>
+            </div>
+            <div class="col-12 col-sm-3 col-md-4">
+                    <h1>Hola Mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Accusamus odio voluptatum, perspiciatis magni quibusdam neque,
+                       alias illum ipsam voluptatibus mollitia aut eos molestiae.
+                       Voluptate et voluptatibus voluptates quam? Blanditiis, rerum.
+                    </p>
+            </div>
+        </div>
+      
     </div>
 
 

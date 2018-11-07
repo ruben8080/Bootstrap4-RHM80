@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,6 @@
     <link rel="stylesheet" href="../../css/rhm.css">
     <title>Grid Bootstrap 4</title>
     <!-- definimos archivos css -->
-    <style>
-       .row > div {
-           background: green;
-           margin: 10px 0;
-       }
-    </style>
 
 
 </head>
@@ -26,39 +21,172 @@
 <!-- .col-md mediano(Medium) - Tablets Mas de 768px y Menos de 992px-->
 <!-- .col-lg large(Large) - Computadoras Mas de 992px y Menos de 1200px-->
 <!-- .col-xl extra large(extra large) - Computadoras Mas de 1200px-->
+
 <body>
+
     <div class="container">
+        <h1><strong> Grid simple </strong></h1>
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4">
-                    <h1>Hola Mundo</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Accusamus odio voluptatum, perspiciatis magni quibusdam neque,
-                       alias illum ipsam voluptatibus mollitia aut eos molestiae.
-                       Voluptate et voluptatibus voluptates quam? Blanditiis, rerum.
-                    </p>
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus odio voluptatum, perspiciatis magni quibusdam neque,
+                    alias illum ipsam voluptatibus mollitia aut eos molestiae.
+                    Voluptate et voluptatibus voluptates quam? Blanditiis, rerum.
+                </p>
             </div>
             <div class="col-12 col-sm-3 col-md-4">
-                    <h1>Hola Mundo</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Accusamus odio voluptatum, perspiciatis magni quibusdam neque,
-                       alias illum ipsam voluptatibus mollitia aut eos molestiae.
-                       Voluptate et voluptatibus voluptates quam? Blanditiis, rerum.
-                    </p>
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus odio voluptatum, perspiciatis magni quibusdam neque,
+                    alias illum ipsam voluptatibus mollitia aut eos molestiae.
+                    Voluptate et voluptatibus voluptates quam? Blanditiis, rerum.
+                </p>
             </div>
             <div class="col-12 col-sm-3 col-md-4">
-                    <h1>Hola Mundo</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Accusamus odio voluptatum, perspiciatis magni quibusdam neque,
-                       alias illum ipsam voluptatibus mollitia aut eos molestiae.
-                       Voluptate et voluptatibus voluptates quam? Blanditiis, rerum.
-                    </p>
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus odio voluptatum, perspiciatis magni quibusdam neque,
+                    alias illum ipsam voluptatibus mollitia aut eos molestiae.
+                    Voluptate et voluptatibus voluptates quam? Blanditiis, rerum.
+                </p>
             </div>
         </div>
-      
     </div>
 
+    <div class="container">
+        <h1><strong> Columnas automaticas </strong></h1>
+        <div class="row">
+            <div class="col uno">
+                <h3>Columna #1</h3>
+            </div>
+            <div class="col dos col-lg-auto">
+                <h3>Columna #2</h3>
+            </div>
+            <div class="col tres">
+                <h3>Columna #3</h3>
+            </div>
+        </div>
+    </div>
 
+    <div class="container">
+        <h1><strong>Clase w-100 actua como un separador entre columnas </strong></h1>
+        <div class="row">
+            <div class="col">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate et voluptatibus voluptates quam?
+                </p>
+            </div>
+            <div class="col">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate et voluptatibus voluptates quam?
+                </p>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate et voluptatibus voluptates quam?
+                </p>
+            </div>
+            <div class="col">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate et voluptatibus voluptates quam?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1><strong>columnas aliniadas verticalmente</strong></h1>
+        <div class="row filaAv align-items-start">
+            <div class="col columnaAv">Columna #1</div>
+            <div class="col columnaAv">Columna #2</div>
+            <div class="col columnaAv">Columna #3</div>
+        </div>
+        <div class="row filaAv align-items-center">
+            <div class="col columnaAv">Columna #1</div>
+            <div class="col columnaAv">Columna #2</div>
+            <div class="col columnaAv">Columna #3</div>
+        </div>
+        <div class="row filaAv align-items-end">
+            <div class="col columnaAv">Columna #1</div>
+            <div class="col columnaAv">Columna #2</div>
+            <div class="col columnaAv">Columna #3</div>
+        </div>
+        <br>
+        <label><code>aliniacion independiente</code></label>
+        <div class="row filaAv">
+                <div class="col columnaAv align-self-start">Columna #1</div>
+                <div class="col columnaAv align-self-center">Columna #2</div>
+                <div class="col columnaAv align-self-end">Columna #3</div>
+            </div>
+    </div>
+       
+    <div class="container">
+            <h1><strong>columnas aliniadas horizontalmente</strong></h1>
+            <div class="row filaAh justify-content-start">
+                <div class="col-4 columnaAh">Columna #1</div>
+                <div class="col-4 columnaAh">Columna #2</div>
+            </div>
+            <div class="row filaAh justify-content-center">
+                <div class="col-4 columnaAh">Columna #1</div>
+                <div class="col-4 columnaAh">Columna #2</div>
+            </div>
+            <div class="row filaAh justify-content-end">
+                <div class="col-4 columnaAh">Columna #1</div>
+                <div class="col-4 columnaAh">Columna #2</div>
+            </div>
+            <div class="row filaAh justify-content-around">
+                    <div class="col-4 columnaAh">Columna #1</div>
+                    <div class="col-4 columnaAh">Columna #2</div>
+            </div>
+            <div class="row filaAh justify-content-between">
+                <div class="col-4 columnaAh">Columna #1</div>
+                <div class="col-4 columnaAh">Columna #2</div>
+            </div>
+            <br>
+           
+    </div>
+
+    <div class="container">
+       
+        <h1><strong>offseting</strong></h1>
+        <div class="row filaOff">
+            <div class="columnaOff col-md-4">.col-md-4</div>
+            <div class="columnaOff col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+        </div>
+        
+        <div class="row filaOff">
+            <div class="columnaOff col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+            <div class="columnaOff col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        </div>
+        
+        <div class="row filaOff">
+            <div class="columnaOff col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+        </div>
+
+    </div>
+
+    <!-- <div class="container">
+            <h1><strong>Ordeanmiento de columnas</strong></h1>
+            <div class="row filaOff justify-content-between">
+              <div class="columnaOff col-2 flex-last">Columna #1</div>
+              <div class="columnaOff col-2 flex-unordered">Columna #2</div>
+              <div class="columnaOff col-2 flex-first">Columna #3</div>
+              <div class="columnaOff col-2 flex-first">Columna #4</div>
+            </div>
+          
+    </div> -->
+
+             
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
 </body>
+
 </html>

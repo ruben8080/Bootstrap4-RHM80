@@ -1,9 +1,65 @@
 body {
-background: #f0f3f5;
-color: #fff;
+    /* background: #f0f3f5;
+    color: #fff; */
 }
 header {
     background: #9aca40;
     padding: 20px;
     margin-bottom: 20px;
 }
+
+/* grid simple */
+.row > div {
+    /* background: green; */
+    text-align: center;
+    margin: 1px;
+}
+
+
+
+/* fin */
+/* columnas automaticas */
+.uno{background: #f2f2f2}
+.dos{background: #b81a1a}
+.tres{background: #f2f2f2}
+/* fin */
+/* columnas aliniadas verticalmente*/
+.filaAv{
+    background: #e8e8e8;
+    height: 150px;
+    margin-top: 20px;
+
+}
+.columnaAv{
+    background: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #4d5061;
+}
+/*fin*/
+/* columnas aliniadas horizontal y para offseting*/
+.filaAh{
+    background: #e8e8e8;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.columnaAh{
+    background: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #4d5061;
+}
+/*fin*/
+/* offseting*/
+.filaOff{
+    background: #e8e8e8;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.columnaOff{
+    /*background: grey;
+    text-align: center;*/
+    padding: 10px;
+    border: 2px solid green;
+}
+/*fin*/

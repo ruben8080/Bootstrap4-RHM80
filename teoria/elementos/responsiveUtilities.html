@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../../css/rhm.css"> -->
+    <title>Responsive Utilities</title>
+    <!-- definimos archivos css -->
+    <style>
+    .columna {
+        background: #2191fb;
+        color:#fff;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<!-- h1{} comando emmet inserta contenido dentro del h1 -->
+<!-- siempre dentro un container -> row -> col* dentro de las mismas o sea las columnas 
+    va todo el contenido es la forma de trabajar en bootstrap 4 -->
+<!-- tamaños dentro de las columnas -->
+<!-- .col extra pequeño(extra smaall) - Smarphones vertical Menos de 544px-->
+<!-- .col-sm pequeño(smaall) - Smarphones vertical Mas de 544px y Menos de 768px-->
+<!-- .col-md mediano(Medium) - Tablets Mas de 768px y Menos de 992px-->
+<!-- .col-lg large(Large) - Computadoras Mas de 992px y Menos de 1200px-->
+<!-- .col-xl extra large(extra large) - Computadoras Mas de 1200px-->
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- <div class="columna col d-sm-none">XS - Extra Small</div>
+            <div class="columna col d-none d-md-none">SM - Small</div>
+            <div class="columna col d-lg-none d-none d-sm-block">MD - Medium</div>
+            <div class="columna col d-xl-none d-none d-md-block">LG - Large</div>
+            <div class="columna col d-none d-lg-block">XL - Extra large</div> -->
+
+                <div class="columna col d-sm-none"> eXtra Small 576px </div>
+                <div class="columna col d-none d-sm-block d-md-none d-lg-none d-xl-none"> SMall ≥576px </div>
+                <div class="columna col d-none d-md-block d-lg-none d-xl-none"> MeDium ≥768px </div>
+                <div class="columna col d-none d-lg-block d-xl-none"> LarGe ≥992px </div>
+                <div class="columna col d-none d-xl-block"> eXtra Large ≥1200px </div>
+<!-- 
+hidden-sm-up = d-sm-none
+hidden-xs-down = d-none d-xs-block
+sm
+md  -->
+
+
+
+        </div>
+        <div class="row">
+                <div class="col">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi totam, facilis quam cupiditate similique debitis temporibus incidunt,
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi totam, facilis quam cupiditate similique debitis temporibus incidunt,
+                        quisquam rem in dolore explicabo animi, enim fuga. Quas eaque sit eligendi?
+                    </p>
+                </div>
+        </div>
+    </div>
+             
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+
+</html>

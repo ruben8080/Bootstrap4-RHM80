@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../../css/rhm.css"> -->
+    <title>Imagenes en Bootstrap</title>
+    <!-- definimos archivos css -->
+    <style>
+        .columna {
+            margin-top: 20px;
+            /* background: #f2f2f2;
+            border: 1px solid #424242; */
+        }
+    </style>
+</head>
+<!-- h1{} comando emmet inserta contenido dentro del h1 -->
+<!-- siempre dentro un container -> row -> col* dentro de las mismas o sea las columnas 
+    va todo el contenido es la forma de trabajar en bootstrap 4 -->
+<!-- tamaños dentro de las columnas -->
+<!-- .col extra pequeño(extra smaall) - Smarphones vertical Menos de 544px-->
+<!-- .col-sm pequeño(smaall) - Smarphones vertical Mas de 544px y Menos de 768px-->
+<!-- .col-md mediano(Medium) - Tablets Mas de 768px y Menos de 992px-->
+<!-- .col-lg large(Large) - Computadoras Mas de 992px y Menos de 1200px-->
+<!-- .col-xl extra large(extra large) - Computadoras Mas de 1200px-->
+<body>
+<div class="container-fluid">
+      <!-- en la fila row los padding que trae B4 por defecto se borran con la clase  no-gutters-->
+    <div class="row no-gutters">
+        <!-- como hacer para que una imgen se adapte al contenedor al col , se hace con la clase img-fluid -->
+        <div class="col columna">
+            <img class="img-fluid float-left img-thumbnail " src="../../img/uno.jpg" alt="200" width="200">
+            <img class="img-fluid float-right rounded" src="../../img/dos.jpg" alt="200" width="200">    
+        </div>
+    </div>
+    <br>
+    <div class="row">
+            <div class="col-6">
+                <figure class="figure">
+                    <img class="img-fluid rounded" src="../../img/uno.jpg" alt="400" width="400">
+                    <figcaption class="figure-caption">
+                            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+                    </figcaption>  
+                </figure>
+            </div>
+    </div>
+</div>
+             
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+
+</html>
